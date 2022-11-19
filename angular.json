@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "frontend": {
+    "survivorBlog": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -63,10 +63,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "frontend:build:production"
+              "browserTarget": "survivorBlog:build:production"
             },
             "development": {
-              "browserTarget": "frontend:build:development"
+              "browserTarget": "survivorBlog:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -74,7 +74,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "frontend:build"
+            "browserTarget": "survivorBlog:build"
           }
         },
         "test": {
@@ -92,5 +92,5 @@
       }
     }
   },
-  "defaultProject": "frontend"
+  "defaultProject": "survivorBlog"
 }
